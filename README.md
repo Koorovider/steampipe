@@ -49,6 +49,12 @@ connection "aws_profile" {
   profile     = "profile"
   regions     = ["*"]
 }
+
+connection "gcp_profile" {
+  plugin      = "gcp"
+  project     = "profile"
+  credentials = "/home/test/credentials.json"
+}
 ```
 
 ### Using Aggregators
@@ -59,6 +65,12 @@ connection "aws_all" {
   type        = "aggregator"
   plugin      = "aws"
   connections = ["aws_*"]
+}
+
+connection "gcp_all" {
+  type        = "aggregator"
+  plugin      = "gcp"
+  connections = ["gcp_*"]
 }
 ```
 
