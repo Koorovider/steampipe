@@ -1,4 +1,5 @@
 # Steampipe Setup Guide
+https://aws.amazon.com/ko/blogs/infrastructure-and-automation/simplify-sql-queries-to-aws-api-operations-using-steampipe-and-aws-plugin/
 
 ## Pre-Work
 ### Install AWS CLI
